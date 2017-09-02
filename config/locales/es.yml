@@ -1,0 +1,48 @@
+es:
+  telegram_webhooks:
+    action_missing:
+      command: Can not perform %{command}
+      feature: '%{action} feature is not implemented yet'
+    callback_query:
+      alert: This is ALERT-T-T!!!
+      no_alert: Simple answer
+    help:
+      content: |
+        Available cmds:
+        /futbol %dia% %hora% - Crea un nuevo partido.
+        /futbol - Informacion del proximo partido
+        /juego - agrega al que lo dice a la lista de jugadores
+        /juego %nombre% - agrega a una persona exterior al grupo
+        /lista - devuelve la lista de anotados
+        /bajo - elimina al que lo dice del proximo partido
+        /bajo %numero% - elimina a un extra
+        /eliminar %partido%  - borra un partido
+    inline_keyboard:
+      alert: Answer with alert
+      no_alert: Without alert
+      prompt: 'Check my inline keyboard:'
+      repo: Open gem repo
+    inline_query:
+      content: Content
+      description: Description
+    keyboard:
+      buttons:
+        - Lorem
+        - Ipsum
+        - /cancel
+      prompt: 'Select something with keyboard:'
+      selected: "You've selected: %{value}"
+    last_chosen_inline_result:
+      prompt: Mention me to initiate inline query
+      selected: "You've chosen result #%{result_id}"
+    memo:
+      notice: Remembered!
+      prompt: What should I remember?
+    message:
+      content: 'You wrote: %{text}'
+    remind_me:
+      nothing: Nothing to remind
+    start:
+      content: Hi there!
+  date:
+    day_names: [Domingo, Lunes, Martes, Miercoles, Jueves, Viernes, Sabado]

@@ -1,27 +1,22 @@
-# Example telegram bot app
+# Futbot
+
+This bot helps organize soccer match with your friends.
+Just invite the bot to your group.
+
+This was a weekend proyect, the code is crappy and not optimized. 
+
+The locale is forced to :es (spanish)
 
 This app uses [telegram-bot](https://github.com/telegram-bot-rb/telegram-bot) gem.
-Want to see the [bot code](https://github.com/telegram-bot-rb/telegram_bot_app/blob/master/app/controllers/telegram_webhooks_controller.rb)
-first?
 
-Explore separate commits to check evolution of code.
-
-Want a clean setup instead?
-Here is [app teamplate](https://github.com/telegram-bot-rb/rails_template) to help you.
 
 ## Commands
 
-- `/start` - Greeting.
-- `/help`
-- `/memo %text%` - Saves text to session.
-- `/remind_me` - Replies with text from session.
-- `/keyboard` - Simple keyboard.
-- `/inline_keyboard` - Inline keyboard example.
-- Inline queries. Enable it in [@BotFather](https://telegram.me/BotFather),
-  and your're ready to try 'em.
-- `/last_chosen_inline_result` - Your last chosen inline result
-  (Enable feedback with sending `/setinlinefeedback`
-  to [@BotFather](https://telegram.me/BotFather)).
+- `/futbol` - Information about the upcoming match.
+- `/futbol %day_name% %time$ - create a new match for the group
+- `/juego` - join to the game
+- `/juego %name%` - join an external user to the group
+- `/lista` - print current players
 
 ## Setup
 
@@ -61,25 +56,7 @@ Now deploy your app in any way you like. You don't need run anything special for
 but `rails server` as usual. Your rails app will receive webhooks and bypass them
 to bot's controller.
 
-### Testing
 
-```
-bin/rspec
-```
-
-## Advanced
-
-### Async mode
-
-- Uncomment `async: true` in `secrets.yml`.
-- Run and check the logs out.
-- More info about [async mode](https://github.com/telegram-bot-rb/telegram-bot#async-mode).
-
-### Botan
-
-- Get token at [botan.io](http://botan.io/).
-- Uncomment `botan` section in `secrets.yml` and update token.
-- Run.
 
 ## Contributing
 

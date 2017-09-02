@@ -1,9 +1,9 @@
 source 'https://rubygems.org'
 
-git_source(:github) do |repo_name|
-  repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
-  "https://github.com/#{repo_name}.git"
-end
+#git_source(:github) do |repo_name|
+#  repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
+#  "https://github.com/#{repo_name}.git"
+#end
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -26,9 +26,10 @@ gem 'jquery-rails'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
 
-gem 'telegram-bot', github: 'telegram-bot-rb/telegram-bot', ref: '1098118'
+#gem 'telegram-bot', github: 'telegram-bot-rb/telegram-bot', ref: '1098118'
 # gem 'telegram-bot', path: '../telegram-bot'
-
+gem 'telegram-bot'
+gem 'chronic'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production

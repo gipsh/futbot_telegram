@@ -3,7 +3,7 @@
 This bot helps organize soccer match with your friends.
 Just invite the bot to your group.
 
-This was a weekend proyect, the code is crappy and not optimized. 
+This was a weekend project, the code is crappy and not optimized. 
 
 The locale is forced to :es (spanish)
 
@@ -13,10 +13,14 @@ This app uses [telegram-bot](https://github.com/telegram-bot-rb/telegram-bot) ge
 ## Commands
 
 - `/futbol` - Information about the upcoming match.
-- `/futbol %day_name% %time$ - create a new match for the group
+- `/futbol` %day_name% %time$ - create a new match for the group ie: `/futbol sabado 20pm`
 - `/juego` - join to the game
 - `/juego %name%` - join an external user to the group
 - `/lista` - print current players
+- `/bajo` - removes the user from the game
+- `/bajo %number%` - removes the external player from the game
+- `/eliminar %game_num%` - removes the game 
+
 
 ## Setup
 

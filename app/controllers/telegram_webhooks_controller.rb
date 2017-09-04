@@ -76,8 +76,9 @@ class TelegramWebhooksController < Telegram::Bot::UpdatesController
 
   
   def juego(*person)
-
-	@game = Game.first
+         resp = String.new
+         @games = Game.where(group_id: self.chat['id'])
+         @games = @games.take
 
  	if person.any?
 	  @persona = person.join(' ')
